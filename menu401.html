@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .menu-1 {
+        display: flex;
+        border: 1px solid;
+        border-end-end-radius: 4px;
+        border-end-start-radius: 4px;
+        border-start-end-radius: 4px;
+        border-start-start-radius: 4px;
+      }
+      .menu-1 > li ~ li {
+        border-left: 1px solid #393942;
+      }
+      .menu-2 li {
+        border-bottom: 1px solid#333;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      .menu-1 > li {
+        background-color: #4c4e5a;
+        padding: 7px;
+        position: relative;
+      }
+      #lienhephai {
+        padding-right: 166px;
+      }
+      .menu-2 {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 130px;
+        border-end-end-radius: 4px;
+        border-end-start-radius: 4px;
+        border: 1px solid black;
+      }
+      .menu-2 > li {
+        background-color: rgb(0, 0, 0);
+        padding: 10px;
+      }
+      .menu-1 > li:hover .menu-2 {
+        display: block;
+      }
+      a:hover {
+        color: rgb(166, 243, 50);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu-1">
+        <li>
+          <a href="#">Trang chu</a>
+          <ul class="menu-2">
+            <li><a href="#">TFT</a></li>
+            <li><a href="#">LOL</a></li>
+            <li><a href="#">FIFA</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">San pham</a>
+          <ul class="menu-2">
+            <li><a href="#">CSS3</a></li>
+            <li><a href="#">HTML5</a></li>
+            <li><a href="#">PHP</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Dich vu</a>
+          <ul class="menu-2">
+            <li><a href="#">TFT</a></li>
+            <li><a href="#">LOL</a></li>
+            <li><a href="#">FIFA</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Gioi thieu</a>
+          <ul class="menu-2">
+            <li><a href="#">TFT</a></li>
+            <li><a href="#">LOL</a></li>
+            <li><a href="#">FIFA</a></li>
+          </ul>
+        </li>
+        <li id="lienhephai">
+          <a href="#">Lien he</a>
+          <ul class="menu-2">
+            <li><a href="thuanlv2609@gmail.com">thuanlv</a></li>
+            <li><a href="0326257554">So lien lac</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

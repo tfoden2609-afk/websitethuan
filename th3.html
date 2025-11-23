@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .menu{
+            display: flex;
+        }
+        .menu>li{
+            border: 1px solid rgb(150, 146, 146);
+            padding: 9px;
+            margin: 3px;
+            border-end-end-radius: 5px;
+            border-end-start-radius: 5px;
+            border-start-end-radius: 5px;
+            border-start-start-radius: 5px;
+            position: relative;
+        }
+        .menu>li:hover,a:hover{
+            background-color: red;
+            color: white;
+        }
+        .menu-2{
+            display: none;
+        }
+        .menu-2>li{
+            position: absolute;
+            border: 1px solid black;
+            padding: auto;
+            top: 200%;
+            left: 0%;
+            height: 700px;
+            width: 1300px;
+            border-start-end-radius: 40px ;
+            border-start-start-radius: 40px ;
+            border-end-end-radius: 40px ;
+            border-end-start-radius: 40px ;
+        }
+        .menu >li:hover .menu-2,div{
+            display: block;
+            overflow: hidden;
+        }
+        #hoatanh1{
+            font-size:400px;
+        }
+        img{
+            border-radius: 40px ;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="d">All</a>
+            <ul class="menu-2">
+                <li><a href="hih"><img src="Screenshot 2025-11-23 161057.png" alt="hih" height="700px" width="1300"></a></li>
+            </ul></li>
+            <li><a href="sc">Animal</a></li>
+            <li><a href="sjb">Nature</a></li>
+            <li><a href="cs">Tranh anh</a></li>
+            <li> <a href="Mountain">Mountain</a></li>
+        </ul>
+    </nav>
+    <div id="hoatanh1">NULL</div>
+</body>
+</html>

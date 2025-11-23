@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT3</title>
+    <style>
+        .khung{
+            border: 1px solid greenyellow;
+            border-end-start-radius: 7px ;
+            border-end-end-radius: 7px;
+            border-start-end-radius: 7px;
+            border-start-start-radius: 7px;
+            text-align: center;
+        }
+        .row{
+            display: flex;
+        }
+        #header{
+            width: auto;
+            height: 70px;
+        }
+        #nav{
+            width: auto;
+            height: 30px;
+        }
+        #left{
+            width: 1000px;
+            height: 300px;
+        }
+        #body{
+            width: 3000px;
+            height: 300px;
+        }
+        #right{
+            width: 1000px;
+            height: 300px;
+        }
+        #footer{
+            width: auto;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <p class="khung" id="header">header</p>
+    <div class="khung" id="nav">Nav</div>
+    <div class="row">
+        <p class="khung" id="left">Left</p>
+        <p class="khung" id="body">Body</p>
+        <p class="khung" id="right">Right</p>
+    </div>
+    <p class="khung" id="footer">Footer</p>
+</body>
+</html>

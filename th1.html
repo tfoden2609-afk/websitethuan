@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu-1{
+            display: flex;
+            background-color: #ccc;
+        }
+        .menu-1>li{
+            border:  1px solid white;
+            padding: 10px;
+            margin:0;
+            position: relative;
+        }
+        .menu-1 li:hover{
+            background-color: red;
+        }
+        .menu-2{
+            display: none;
+            background-color: #4c4949;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 159px;
+            border: 1px solid gold;
+        }
+        .menu-2 > li{
+            padding: 10px;
+            margin: 0;
+        }
+        .menu-1>li:hover .menu-2{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu-1">
+            <li><a href="#">Trang chu</a></li>
+            <li><a href="#">Gioi thieu</a>
+            <ul class="menu-2">
+                <li><a href="#">San pham cap 2</a></li>
+                <li><a href="#">San pham cap 2</a></li>
+            </ul></li>
+            <li><a href="$">San pham</a></li>
+            <li><a href="#">Dich vu</a></li>
+            <li><a href="$">Lien he</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

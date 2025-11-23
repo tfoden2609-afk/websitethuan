@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .menu-1{
+        }
+        .menu-1>li{
+            padding: 10px;
+            border: 1px solid white;
+            background-color: #ccc ;
+            width: 160px;
+            position: relative;
+        }
+        .menu-1 > li:hover{
+            background-color: red;
+        }
+        .menu-2{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+        }
+        .menu-2 > li{
+            background-color: #807f7f ;
+            padding: 10px;
+            width: 160px;
+            border: 1px solid white;
+        }
+        .menu-2 > li:hover{
+            background-color: red;
+        }
+        .menu-1 > li:hover .menu-2{
+            display: block;
+        }
+        .menu-3{
+            display: none;
+            position: absolute;
+            top: 80%;
+            left: 100%;
+        }
+        .menu-3 > li{
+            background-color: #6d6c6c;
+            border: 1px solid white;
+            width: 160px;
+            padding: 10px;
+        }
+        .menu-3 > li:hover{
+            background-color: red;
+        }
+        .menu-2 > li:hover .menu-3{
+            display: block;
+        }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu-1">
+        <li>
+          <a href="#">Laptop Dell</a>
+          <ul class="menu-2">
+            <li><a href="cc">Dell Inspiron</a></li>
+            <li><a href="vdh">Dell Precision</a></li>
+            <li><a href="vd">Dell XPS</a></li>
+            <li><a href="hh">Dell Latitude</a></li>
+            <li>
+              <a href="#">Alienware</a>
+              <ul class="menu-3">
+                <li><a href="Ram 2G">Ram 2G</a></li>
+                <li><a href="Ram 4G">Ram 4G</a></li>
+                <li><a href="Ram 6G">Ram 6G</a></li>
+                <li><a href="Ram 16G">Ram 16G</a></li>
+                <li><a href="#">Ram 100G</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="cs">Laptop HP</a></li>
+        <li><a href="cs">Laptop Lenovo</a></li>
+        <li><a href="chs">Laptop Acer</a></li>
+        <li><a href="sc">Laptop Asus</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
