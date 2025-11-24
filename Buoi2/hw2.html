@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài thực hành 02</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Thông tin báo cáo</legend>
+            <div>
+                Thiết kế giao diện web <br>
+                <progress value="80" max="100"></progress> <br>
+                Phân tích sơ đồ theo thực thể <br>
+                <progress value="50" max="100"></progress> <br>
+                Viết tài liệu phân tích thiết kế <br>
+                <progress value="30" max="100"></progress>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Thông tin danh sách môn học</legend>
+            <input type="text" name="monhoc" id="monhoc" list="danhsach">
+            <datalist id="danhsach">
+                <option value="Toan"></option>
+                <option value="anh"></option>
+                <option value="van"></option>
+                <option value="gdqp"></option>
+            </datalist>
+        </fieldset>   
+    </form>
+</body>
+</html>
